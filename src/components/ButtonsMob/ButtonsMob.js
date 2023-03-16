@@ -11,7 +11,7 @@ export default function ButtonsMob({ modal, setModal }) {
           onClick={() => setModal(true)}
           buttonType={"primary"}
           title="Отправить заявку"
-          style={{ width: "212px", height: "44px" }}
+          style={{ maxWidth: "436px", height: "44px" }}
         ></Button>
         <a target="_blank" href="https://wa.me/79018529668">
           <Button

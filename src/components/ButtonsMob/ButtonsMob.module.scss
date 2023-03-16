@@ -6,8 +6,8 @@
   width: 100%;
   padding: 12px 24px;
   height: 70px;
-  background-color: #f2f4f7;
-  border-top: 1px solid #dde1ed;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   & p {
     margin: 24px 0px;
     font-size: 14px;
@@ -20,7 +20,9 @@
 }
 
 .btns {
-  display: flex;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
   align-items: center;
   & button svg {

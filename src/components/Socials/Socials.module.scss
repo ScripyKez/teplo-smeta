@@ -6,6 +6,9 @@
   grid-template-columns: 45% 1fr auto auto auto auto;
   grid-gap: 12px;
   align-items: center;
+  & p {
+    font-weight: 600;
+  }
   & button {
     margin-left: auto;
   }

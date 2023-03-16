@@ -50,7 +50,7 @@ export default function Products({
                   <p className={styles.m__item_name}>{e.name}</p>
                   <span>
                     {numberWithSpaces(e.price)} ₽ x {numberWithSpaces(e.qnt)}{" "}
-                    {e.unit} = <b>{numberWithSpaces(e.price * e.qnt)}</b> ₽
+                    {e.unit} = <b>{numberWithSpaces(e.price * e.qnt)} ₽</b>
                   </span>
                 </li>
               ))
@@ -58,7 +58,7 @@ export default function Products({
                 <li key={i} className={cn(styles.item)}>
                   {e.img && <img alt={e.name} src={e.img}></img>}
                   <p>{e.name}</p>
-                  <span>{numberWithSpaces(e.price)}</span>
+                  <span>{numberWithSpaces(e.price)} ₽</span>
                   <span>{numberWithSpaces(e.qnt)}</span>
                   <span>{e.unit}</span>
                   <span>{numberWithSpaces(e.price * e.qnt)} ₽</span>
