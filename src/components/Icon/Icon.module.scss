@@ -1,0 +1,9 @@
+.icon {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  transition: top ease 0.5s;
+  &:hover {
+    top: -3px;
+  }
+}

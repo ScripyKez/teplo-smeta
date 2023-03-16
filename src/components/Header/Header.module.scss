@@ -1,0 +1,65 @@
+@import "../../index.scss";
+
+.header {
+  color: #2f3644;
+  background: #fff;
+  padding: 24px 0px;
+  max-width: 1920px;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .logo {
+    font-family: "intro";
+    font-size: 18px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    cursor: pointer;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    &::before {
+      display: inline-block;
+
+      content: "";
+      width: 1px;
+      height: 22px;
+      background-color: #dde1ed;
+      margin: 0px 24px;
+    }
+  }
+  .form {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: auto;
+
+    color: #0277bd;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:active {
+      color: #2f3644;
+    }
+    &:hover {
+      color: #028dd8;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    display: none !important;
+  }
+  .container {
+    display: flex;
+    padding: 0px 24px;
+  }
+}

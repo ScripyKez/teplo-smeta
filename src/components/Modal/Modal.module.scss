@@ -1,0 +1,87 @@
+@import "../../index.scss";
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
+  &.close {
+    height: 0;
+    display: none;
+  }
+  &.open {
+    height: 100%;
+    display: block;
+  }
+  & .content {
+    max-width: 480px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 5%;
+    padding: 48px;
+    border-radius: 10px;
+
+    & .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+      }
+      & svg {
+        cursor: pointer;
+      }
+    }
+
+    & .form {
+      margin-top: 24px;
+      display: grid;
+      gap: 24px;
+
+      & input {
+        padding: 18px;
+        border: 1px solid #dde1ed;
+        height: 55px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        &::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          color: #8695ac;
+        }
+        &:focus {
+          border: 1px solid #028dd8;
+        }
+      }
+
+      & textarea {
+        padding: 18px;
+        border: 1px solid #dde1ed;
+        height: 140px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        &::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          color: #8695ac;
+        }
+        &:focus {
+          border: 1px solid #028dd8;
+        }
+      }
+    }
+
+    & .form button p {
+      font-weight: 700;
+      font-size: 13px;
+    }
+    & .subtitle {
+      font-size: 11px;
+      font-weight: 400;
+    }
+  }
+}

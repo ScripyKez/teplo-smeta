@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 24px;
+  height: 70px;
+  background-color: #f2f4f7;
+  border-top: 1px solid #dde1ed;
+  & p {
+    margin: 24px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & button svg {
+    margin-left: 12px;
+  }
+}

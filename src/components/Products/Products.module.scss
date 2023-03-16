@@ -1,0 +1,132 @@
+@import "../../index.scss";
+
+.title {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content {
+  margin-top: 24px;
+
+  background: #f2f4f7;
+  border-radius: 5px;
+  .header {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      display: block;
+      min-width: 80px;
+      margin-left: 12px;
+      &:first-child {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+ul {
+  font-size: 14px;
+  font-weight: 400;
+  .item {
+    border-bottom: 1px solid #f2f4f7;
+    padding: 6px 12px;
+    background-color: #fff;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    img {
+      margin-right: 12px;
+    }
+    p {
+      margin-right: auto;
+    }
+    span {
+      display: block;
+      min-width: 80px;
+      margin-left: 12px;
+    }
+    img {
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  & p {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+.m_header {
+  display: none !important;
+}
+
+.m__item {
+  padding: 12px 0px;
+  background-color: #fff;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid #f2f4f7;
+  align-items: center;
+  grid-template-areas:
+    "a b b"
+    "a c c";
+  .m__item-name {
+    grid-area: b;
+  }
+  & span {
+    grid-area: c;
+  }
+  & img {
+    grid-area: a;
+  }
+}
+.m__item_img {
+  padding: 12px 0px;
+  background-color: #fff;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr auto;
+  border-bottom: 1px solid #f2f4f7;
+  align-items: center;
+  grid-template-areas:
+    "b b b"
+    "c c c";
+  .m__item-name {
+    grid-area: b;
+  }
+  & span {
+    grid-area: c;
+  }
+}
+
+@media (max-width: 500px) {
+  .header span {
+    display: none !important;
+  }
+  .header {
+    justify-content: flex-start !important;
+  }
+  .item {
+    display: none !important;
+  }
+  .m_header {
+    display: block !important;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

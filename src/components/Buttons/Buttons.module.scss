@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.container {
+  height: 130px;
+  border-bottom: 1px solid #dde1ed;
+  & p {
+    margin: 24px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  & button {
+    margin-left: 12px;
+  }
+}

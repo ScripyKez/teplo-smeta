@@ -1,0 +1,21 @@
+@import "./styles/variable";
+@import "./styles/reset";
+@font-face {
+  font-family: "intro";
+  src: url("../public/assets/fonts/Intro-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  max-width: 1920px;
+  background-color: $bg-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

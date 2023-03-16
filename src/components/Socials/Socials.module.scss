@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+.container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 45% 1fr auto auto auto auto;
+  grid-gap: 12px;
+  align-items: center;
+  & button {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    gap: 12px;
+    display: grid;
+    padding: 0 0;
+    grid-template-columns: 1fr auto auto auto auto;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a a a a a"
+      "b i i i i";
+    & button {
+      width: 158px !important;
+      grid-area: b;
+      margin-left: 0;
+    }
+    & svg {
+      grid-area: i;
+    }
+    & p {
+      grid-area: a;
+    }
+  }
+  //   .container {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     justify-content: space-between;
+  //     & button {
+  //       width: 158px !important;
+  //       grid-area: b;
+  //       margin-left: 0;
+  //       align-self: self-start;
+  //     }
+  //     & svg {
+  //       grid-area: i;
+  //     }
+  //     & p {
+  //       grid-area: a;
+  //     }
+  //   }
+}

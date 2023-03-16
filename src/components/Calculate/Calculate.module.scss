@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  margin-top: 35px;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container {
+    gap: 12px;
+    display: grid;
+    padding: 0 24px;
+    justify-content: center;
+    & button {
+      width: 312px !important;
+    }
+  }
+}

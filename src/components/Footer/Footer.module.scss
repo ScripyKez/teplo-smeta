@@ -1,0 +1,49 @@
+@import "../../index.scss";
+
+.footer {
+  color: $black;
+  background: $white;
+  padding: 24px 0px;
+  max-width: 1920px;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .title {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #5e7491;
+  }
+  .form {
+    font-size: 14px;
+    margin-left: auto;
+
+    font-weight: 600;
+    color: #0277bd;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:active {
+      color: $black;
+    }
+    &:hover {
+      color: #028dd8;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+    margin-bottom: 70px;
+  }
+}
