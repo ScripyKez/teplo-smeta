@@ -29,3 +29,9 @@
     margin-left: 12px;
   }
 }
+
+@media (max-width: 500px) {
+  .btns{
+    display: flex;
+  }
+}

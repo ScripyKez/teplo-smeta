@@ -19,8 +19,6 @@
   gap: 12px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   .item {
-    width: 135px;
-    height: 102px;
     cursor: pointer;
   }
 }
@@ -29,5 +27,10 @@
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    .item {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
   }
 }

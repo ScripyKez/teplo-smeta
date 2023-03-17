@@ -73,3 +73,17 @@
     background-color: $blue;
   }
 }
+
+@media (max-width: 500px) {
+  .primary {
+    flex-grow: 1;
+  }
+  .tg{
+    width: 44px;
+    height: 44px;
+  }
+  .whup{
+    width: 44px;
+    height: 44px;
+  }
+}

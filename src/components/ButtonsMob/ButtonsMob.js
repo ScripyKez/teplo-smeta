@@ -11,20 +11,18 @@ export default function ButtonsMob({ modal, setModal }) {
           onClick={() => setModal(true)}
           buttonType={"primary"}
           title="Отправить заявку"
-          style={{ maxWidth: "436px", height: "44px" }}
+          style={{ height: "44px" }}
         ></Button>
         <a target="_blank" href="https://wa.me/79018529668">
           <Button
             buttonType={"whup"}
             title=""
-            style={{ width: "44px", height: "44px" }}
           ></Button>
         </a>
         <a target="_blank" href="https://t.me/viratek_remont">
           <Button
             buttonType={"tg"}
-            title=""
-            style={{ width: "44px", height: "44px" }}
+            title=""    
           ></Button>
         </a>
       </div>
