@@ -1,13 +1,17 @@
 import React from "react";
 import Button from "../Button/button";
 import styles from "./Socials.module.scss";
-import Icon from "../Icon/Icon";
 import {
   TelegramShareButton,
   WhatsappShareButton,
   VKShareButton,
   OKShareButton,
 } from "react-share";
+
+import { ReactComponent as IconVk } from "../../styles/icons/vk.svg";
+import { ReactComponent as IconWh } from "../../styles/icons/wh.svg";
+import { ReactComponent as IconTg } from "../../styles/icons/tg.svg";
+import { ReactComponent as IconOk } from "../../styles/icons/ok.svg";
 
 export default function Socials() {
   const [copied, setCopied] = React.useState(false);
@@ -40,22 +44,22 @@ export default function Socials() {
       <ul className={styles.ul}>
         <li>
           <TelegramShareButton url={window.location.href}>
-            <Icon icon="tg" />
+            <IconTg />
           </TelegramShareButton>
         </li>
         <li>
           <WhatsappShareButton url={window.location.href}>
-            <Icon icon="wh" />
+            <IconWh />
           </WhatsappShareButton>
         </li>
         <li>
           <VKShareButton url={window.location.href}>
-            <Icon icon="vk" />
+            <IconVk />
           </VKShareButton>
         </li>
         <li>
           <OKShareButton url={window.location.href}>
-            <Icon icon="ok" />
+            <IconOk />
           </OKShareButton>
         </li>
       </ul>
