@@ -2,6 +2,12 @@ import React from "react";
 import Button from "../Button/button";
 import styles from "./Socials.module.scss";
 import Icon from "../Icon/Icon";
+import {
+  TelegramShareButton,
+  WhatsappShareButton,
+  VKShareButton,
+  OKShareButton,
+} from "react-share";
 
 export default function Socials() {
   const [copied, setCopied] = React.useState(false);
@@ -31,10 +37,28 @@ export default function Socials() {
         buttonType={"social"}
         title={!copied ? "Скопировать" : "Скопировано!"}
       />
-      <Icon icon="tg" />
-      <Icon icon="wh" />
-      <Icon icon="vk" />
-      <Icon icon="ok" />
+      <ul className={styles.ul}>
+        <li>
+          <TelegramShareButton url={window.location.href}>
+            <Icon icon="tg" />
+          </TelegramShareButton>
+        </li>
+        <li>
+          <WhatsappShareButton url={window.location.href}>
+            <Icon icon="wh" />
+          </WhatsappShareButton>
+        </li>
+        <li>
+          <VKShareButton url={window.location.href}>
+            <Icon icon="vk" />
+          </VKShareButton>
+        </li>
+        <li>
+          <OKShareButton url={window.location.href}>
+            <Icon icon="ok" />
+          </OKShareButton>
+        </li>
+      </ul>
     </div>
   );
 }

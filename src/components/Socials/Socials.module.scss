@@ -12,6 +12,16 @@
   & button {
     margin-left: auto;
   }
+  & .ul {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    grid-gap: 13px;
+    & {
+      button{
+        width: 25px !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
