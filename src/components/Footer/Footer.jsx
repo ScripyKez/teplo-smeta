@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import cn from "classnames";
 
 export default function Footer({
+  setModal,
   title = "Онлайн расчет водяного теплого пола. Информация на сайте не является публичной офертой.",
   form = "Задать вопрос",
 }) {
@@ -10,7 +11,14 @@ export default function Footer({
     <footer className={cn(styles.footer)}>
       <div className={cn(styles.container)}>
         <h3 className={cn(styles.title)}>{title}</h3>
-        <a className={cn(styles.form)} href="/">
+        <a
+          className={cn(styles.form)}
+          onClick={e => {
+            e.preventDefault();
+            setModal(true);
+          }}
+          href="/"
+        >
           {form}
         </a>
       </div>

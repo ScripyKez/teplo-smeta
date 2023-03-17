@@ -73,7 +73,7 @@ export default function App() {
 
   return (
     <>
-      <Layout>
+      <Layout modal={modal} setModal={setModal}>
         <h1 className={styles.title}>
           Смета водяного теплого пола площадью 100 м.кв
         </h1>
