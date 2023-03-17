@@ -3,14 +3,20 @@ import Button from "../Button/button";
 import styles from "./Socials.module.scss";
 import Icon from "../Icon/Icon";
 
-export default function Socials({}) {
-  function copyToClipboard() {
-    const tempInput = document.createElement("input");
-    tempInput.value = "https://t.me/viratek_remont";
-    document.body.appendChild(tempInput);
-    tempInput.select();
+export default function Socials() {
+  const [copied, setCopied] = React.useState(false);
+
+  function copy() {
+    const el = document.createElement("input");
+    el.value = window.location.href;
+    document.body.appendChild(el);
+    el.select();
     document.execCommand("copy");
-    document.body.removeChild(tempInput);
+    document.body.removeChild(el);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 500);
   }
 
   return (
@@ -20,9 +26,10 @@ export default function Socials({}) {
         ценой!
       </p>
       <Button
-        onClick={() => copyToClipboard()}
+        isCopy={copied}
+        onClick={() => copy()}
         buttonType={"social"}
-        title={"Скопировать"}
+        title={!copied ? "Скопировать" : "Скопировано!"}
       />
       <Icon icon="tg" />
       <Icon icon="wh" />

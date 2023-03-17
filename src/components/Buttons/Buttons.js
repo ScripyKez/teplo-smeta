@@ -16,10 +16,10 @@ export default function Buttons({ modal, setModal }) {
           buttonType={"primary"}
           title="Отправить заявку"
         ></Button>
-        <a target="_blank" href="https://wa.me/79018529668">
+        <a target="_blank" rel="noreferrer" href="https://wa.me/79018529668">
           <Button buttonType={"whup"} title="WhatsApp"></Button>
         </a>
-        <a target="_blank" href="https://t.me/viratek_remont">
+        <a target="_blank" rel="noreferrer" href="https://t.me/viratek_remont">
           <Button buttonType={"tg"} title="Telegram"></Button>
         </a>
       </div>

@@ -23,6 +23,14 @@
 }
 
 @media (max-width: 500px) {
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    & button {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
   .container {
     z-index: 100;
     position: fixed;
