@@ -3,7 +3,6 @@ import Layout from "../Layout/Layout";
 import styles from "../App/App.module.scss";
 import Products from "../Products/Products";
 import Buttons from "../Buttons/Buttons";
-import ButtonsMob from "../ButtonsMob/ButtonsMob";
 import Examples from "../Examples/Examples";
 import Socials from "../Socials/Socials";
 import Modal from "../Modal/Modal";
@@ -88,16 +87,12 @@ export default function App() {
           m_header="Если вам необходим монтаж"
           title="Если вам необходим монтаж:"
         />
-        {window.innerWidth >= 500 && (
-          <Buttons modal={modal} setModal={setModal} />
-        )}
+
+        <Buttons modal={modal} setModal={setModal} />
+
         <Examples />
         <Socials />
       </Layout>
-      {window.innerWidth < 500 && (
-        <ButtonsMob modal={modal} setModal={setModal} />
-      )}
-
       {window.innerWidth > 500 ? (
         <Modal isOpen={modal} setIsOpen={setModal} />
       ) : (

@@ -19,10 +19,31 @@ export default function Button({
       {...props}
     >
       <p>
-        {buttonType === "social" ? <RxCopy className={styles.svg} /> : ""}
-        {buttonType === "tg" ? <FaTelegramPlane className={styles.svg} /> : ""}
-        {buttonType === "whup" ? <FaWhatsapp className={styles.svg} /> : ""}
-        {title}
+        {buttonType === "primary" ? <>{title}</> : ""}
+        {buttonType === "social" ? (
+          <>
+            <RxCopy className={styles.svg} />
+            {title}
+          </>
+        ) : (
+          ""
+        )}
+        {buttonType === "tg" ? (
+          <>
+            <FaTelegramPlane className={styles.svg} />
+            <span>{title}</span>
+          </>
+        ) : (
+          ""
+        )}
+        {buttonType === "whup" ? (
+          <>
+            <FaWhatsapp className={styles.svg} />
+            <span>{title}</span>
+          </>
+        ) : (
+          ""
+        )}
       </p>
     </button>
   );

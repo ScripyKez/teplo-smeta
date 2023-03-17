@@ -23,7 +23,6 @@ export default function Socials({}) {
         onClick={() => copyToClipboard()}
         buttonType={"social"}
         title={"Скопировать"}
-        style={{ width: "211px", height: "40px" }}
       />
       <Icon icon="tg" />
       <Icon icon="wh" />

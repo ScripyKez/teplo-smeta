@@ -26,7 +26,7 @@
   }
 }
 .primary {
-  width: 250px;
+  width: 234px;
   background-color: $blue;
   font-size: 15px;
   color: $white;
@@ -38,7 +38,7 @@
 .social {
   background: #e6f6ff;
 
-  width: 250px;
+  width: 211px;
   font-size: 15px;
   color: #03a5fc;
   transition: all 0.2s;
@@ -49,7 +49,7 @@
 }
 
 .whup {
-  width: 145px;
+  width: 149px;
   background-color: $white;
   border: 1px solid $green;
   color: $green;
@@ -61,7 +61,7 @@
 }
 
 .tg {
-  width: 145px;
+  width: 149px;
   background-color: $white;
   border: 1px solid $blue;
   color: $blue;
@@ -75,15 +75,28 @@
 }
 
 @media (max-width: 500px) {
+  .btn {
+    & span {
+      display: none;
+    }
+    & .svg {
+      margin-left: 12px;
+    }
+  }
   .primary {
     flex-grow: 1;
+    height: 44px;
   }
-  .tg{
+  .tg {
     width: 44px;
     height: 44px;
   }
-  .whup{
+  .whup {
     width: 44px;
     height: 44px;
+  }
+  .social {
+    height: 40px;
+    width: 158px;
   }
 }

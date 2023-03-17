@@ -6,7 +6,7 @@ import cn from "classnames";
 export default function Buttons({ modal, setModal }) {
   return (
     <div className={cn(styles.container)}>
-      <p>
+      <p className={styles.title}>
         Вы можете заказать <span>отдельно материалы</span> или{" "}
         <span>материалы с монтажом,</span> укажите это в комментарии к заявке.
       </p>
@@ -15,21 +15,12 @@ export default function Buttons({ modal, setModal }) {
           onClick={() => setModal(true)}
           buttonType={"primary"}
           title="Отправить заявку"
-          style={{ width: "234px" }}
         ></Button>
         <a target="_blank" href="https://wa.me/79018529668">
-          <Button
-            buttonType={"whup"}
-            title="WhatsApp"
-            style={{ width: "149px" }}
-          ></Button>
+          <Button buttonType={"whup"} title="WhatsApp"></Button>
         </a>
         <a target="_blank" href="https://t.me/viratek_remont">
-          <Button
-            buttonType={"tg"}
-            title="Telegram"
-            style={{ width: "149px" }}
-          ></Button>
+          <Button buttonType={"tg"} title="Telegram"></Button>
         </a>
       </div>
     </div>
