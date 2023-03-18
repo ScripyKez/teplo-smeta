@@ -82,7 +82,7 @@ export default () => {
           isLoading={isLoading}
           isClearable={!isClearable}
           isRtl={isRtl}
-          isSearchable={isSearchable}
+          isSearchable={!isSearchable}
           name="uteplitel"
           options={options2}
         />
@@ -102,7 +102,7 @@ export default () => {
           isLoading={isLoading}
           isClearable={!isClearable}
           isRtl={isRtl}
-          isSearchable={isSearchable}
+          isSearchable={!isSearchable}
           name="brand"
           options={options3}
         />
