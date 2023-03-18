@@ -6,6 +6,25 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.dropdownBtn {
+  font-weight: 600;
+  height: 60px;
+  padding: 18px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid #dde1ed;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #028dd8;
+  }
+  &:hover svg {
+    fill: rgba(2, 141, 216, 1);
+  }
+}
 @media (max-width: 500px) {
   .container {
     gap: 12px;

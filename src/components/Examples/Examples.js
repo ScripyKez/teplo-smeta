@@ -43,8 +43,8 @@ export default function Examples({
     "/assets/images/4.png",
     "/assets/images/5.png",
     "/assets/images/6.png",
-    "/assets/images/1.png",
-    "/assets/images/1.png",
+    "/assets/images/7.png",
+    "/assets/images/8.png",
   ];
 
   const openImageViewer = React.useCallback(index => {
@@ -83,15 +83,25 @@ export default function Examples({
                 alt="item"
               />
             ))}
-        {isViewerOpen && (
-          <ImageViewer
-            src={images}
-            currentIndex={currentImage}
-            disableScroll={false}
-            closeOnClickOutside={true}
-            onClose={closeImageViewer}
-          />
-        )}
+        {mobile <= 500
+          ? isViewerOpen && (
+              <ImageViewer
+                src={images2}
+                currentIndex={currentImage}
+                disableScroll={false}
+                closeOnClickOutside={true}
+                onClose={closeImageViewer}
+              />
+            )
+          : isViewerOpen && (
+              <ImageViewer
+                src={images}
+                currentIndex={currentImage}
+                disableScroll={false}
+                closeOnClickOutside={true}
+                onClose={closeImageViewer}
+              />
+            )}
       </div>
     </div>
   );

@@ -1,0 +1,98 @@
+.form__container {
+  margin: 0 auto;
+  margin-top: 35px;
+  max-width: 960px;
+  display: flex;
+  // background-color: red;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__react-select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.react-select-title {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.react-select {
+  &__control {
+    padding-left: 10px !important;
+    font-weight: 600;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    min-width: 210px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #dde1ed !important;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #028dd8 !important;
+    }
+
+    &:hover .react-select__indicator {
+      color: #028dd8 !important;
+    }
+  }
+  &__indicator-separator {
+    display: none;
+  }
+  &__menu {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 1px !important;
+    box-shadow: 0px 0px 25px rgba(47, 54, 68, 0.25) !important;
+  }
+}
+
+.react-select2 {
+  &__control {
+    padding-left: 10px !important;
+    font-weight: 600;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    min-width: 325px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #dde1ed !important;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #028dd8 !important;
+    }
+
+    &:hover .react-select2__indicator {
+      color: #028dd8 !important;
+    }
+  }
+  &__indicator-separator {
+    display: none;
+  }
+  &__menu {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 1px !important;
+    box-shadow: 0px 0px 25px rgba(47, 54, 68, 0.25) !important;
+  }
+}
+@media (max-width: 500px) {
+  .form__container {
+    .react-select-title {
+      display: none;
+    }
+    gap: 12px;
+    display: grid;
+    padding: 0 24px;
+    justify-content: center;
+    & button {
+      width: 100% !important;
+      height: 55px;
+    }
+  }
+}
