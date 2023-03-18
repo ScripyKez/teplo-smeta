@@ -31,7 +31,7 @@
       content: "";
       position: absolute;
       top: 25%;
-      left: 5%;
+      left: 10px;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -94,7 +94,7 @@
 
 .react-select2 {
   &__option {
-    padding-left: 40px !important;
+    padding-left: 35px !important;
     cursor: pointer !important;
     background-color: white;
     display: flex;
@@ -105,7 +105,7 @@
       content: "";
       position: absolute;
       top: 25%;
-      left: 5%;
+      left: 10px;
       display: inline-block;
       width: 18px;
       height: 18px;
