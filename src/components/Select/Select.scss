@@ -20,6 +20,8 @@
 }
 .react-select {
   &__option {
+    padding-left: 35px !important;
+    cursor: pointer !important;
     background-color: white;
     display: flex;
     align-items: center;
@@ -29,7 +31,7 @@
       content: "";
       position: absolute;
       top: 25%;
-      left: -13px;
+      left: 5%;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -67,7 +69,7 @@
     justify-content: space-between;
     border-radius: 5px;
     border: 1px solid #dde1ed !important;
-    cursor: pointer;
+    cursor: pointer !important;
     &:hover {
       border: 1px solid #028dd8 !important;
     }
@@ -84,14 +86,16 @@
     font-size: 14px;
     margin-top: 1px !important;
     box-shadow: 0px 0px 25px rgba(47, 54, 68, 0.25) !important;
-    &-list {
-      padding-left: 24px !important;
-    }
+    // &-list {
+    //   padding-left: 24px !important;
+    // }
   }
 }
 
 .react-select2 {
   &__option {
+    padding-left: 40px !important;
+    cursor: pointer !important;
     background-color: white;
     display: flex;
     align-items: center;
@@ -101,7 +105,7 @@
       content: "";
       position: absolute;
       top: 25%;
-      left: -13px;
+      left: 5%;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -129,6 +133,7 @@
     }
   }
   &__control {
+    cursor: pointer !important;
     padding-left: 10px !important;
     font-weight: 600;
     height: 60px;
@@ -156,9 +161,9 @@
     font-size: 14px;
     margin-top: 1px !important;
     box-shadow: 0px 0px 25px rgba(47, 54, 68, 0.25) !important;
-    &-list {
-      padding-left: 24px !important;
-    }
+    // &-list {
+    //   padding-left: 24px !important;
+    // }
   }
 }
 @media (max-width: 500px) {
