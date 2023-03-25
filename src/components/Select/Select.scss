@@ -96,7 +96,7 @@
   &__option {
     padding-left: 35px !important;
     cursor: pointer !important;
-    background-color: white;
+    background-color: white !important;
     display: flex;
     align-items: center;
     position: relative;
@@ -137,7 +137,7 @@
     padding-left: 10px !important;
     font-weight: 600;
     height: 60px;
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     display: flex;
     min-width: 325px;
     align-items: center;

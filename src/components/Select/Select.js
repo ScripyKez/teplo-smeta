@@ -12,19 +12,19 @@ export default () => {
   const [isRtl, setIsRtl] = useState(false);
 
   const options = [
-    { value: "50-m", label: "50 м.кв.", get: "square" },
-    { value: "80-m", label: "80 м.кв.", get: "square" },
-    { value: "100-m", label: "100 м.кв.", get: "square" },
-    { value: "120-m", label: "120 м.кв.", get: "square" },
-    { value: "150-m", label: "150 м.кв.", get: "square" },
-    { value: "200-m", label: "200 м.кв.", get: "square" },
+    { value: "50-m", label: "50 м.кв." },
+    { value: "80-m", label: "80 м.кв." },
+    { value: "100-m", label: "100 м.кв." },
+    { value: "120-m", label: "120 м.кв." },
+    { value: "150-m", label: "150 м.кв." },
+    { value: "200-m", label: "200 м.кв." },
   ];
 
   const options2 = [
-    { value: "Без утеплителя", label: "Без утеплителя", get: "uteplitel" },
-    { value: "30-mm", label: "30 мм", get: "uteplitel" },
-    { value: "50-mm", label: "50 мм", get: "uteplitel" },
-    { value: "100-mm", label: "100 мм", get: "uteplitel" },
+    { value: "0-mm", label: "Без утеплителя" },
+    { value: "30-mm", label: "30 мм" },
+    { value: "50-mm", label: "50 мм" },
+    { value: "100-mm", label: "100 мм" },
   ];
 
   const options3 = [
@@ -32,19 +32,17 @@ export default () => {
       value: "taen",
 
       label: "ТAEN (Россия) - 23 Р/м.п",
-      get: "brand",
     },
     {
       value: "henco",
       label: "HENCO (Бельгия) - 157 Р/м.п",
-      get: "brand",
     },
   ];
 
   return (
     <form
       method="get"
-      action="https://smural.su/smeta/f:tepliy-pol"
+      action="https://teplo-smeta.ru/smeta/tepliy-pol"
       className="form__container"
     >
       <div className="form__react-select-wrapper">
@@ -55,13 +53,13 @@ export default () => {
               {options[0].label}
             </p>
           }
-          defaultValue={options[0].value}
+          defaultValue={options[0]}
           isDisabled={isDisabled}
           isLoading={isLoading}
           isClearable={!isClearable}
           isRtl={isRtl}
           isSearchable={!isSearchable}
-          name="square"
+          name="area"
           options={options}
           className="react-select-container"
           classNamePrefix="react-select"
@@ -77,13 +75,13 @@ export default () => {
           }
           className="react-select-container"
           classNamePrefix="react-select"
-          defaultValue={options2[0].value}
+          defaultValue={options2[0]}
           isDisabled={isDisabled}
           isLoading={isLoading}
           isClearable={!isClearable}
           isRtl={isRtl}
           isSearchable={!isSearchable}
-          name="uteplitel"
+          name="thickness"
           options={options2}
         />
       </div>
@@ -97,13 +95,13 @@ export default () => {
           }
           className="react-select-container2"
           classNamePrefix="react-select2"
-          defaultValue={options3[0].value}
+          defaultValue={options3[0]}
           isDisabled={isDisabled}
           isLoading={isLoading}
           isClearable={!isClearable}
           isRtl={isRtl}
           isSearchable={!isSearchable}
-          name="brand"
+          name="producer"
           options={options3}
         />
       </div>
